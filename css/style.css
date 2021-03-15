@@ -31,16 +31,19 @@
 .container.nested > [class*="col-"]{
   padding: 5px;
 }
-.container.nested > [class*="col-"] > [class*="col-"]{
+.container.nested .container{
+  height: 100%;
+}
+.container.nested .container [class*="col-"]{
   background-color: #F08080;
-  border-right: 1px solid white;
-  border-left: 1px solid white;
   border-top: none;
   border-bottom: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
-.container.nested > [class*="col-"] > [class*="col-"]:first-child{
+.container.nested .container [class*="col-"]:first-child{
   border-left: none;
 }
-.container.nested > [class*="col-"] > [class*="col-"]:last-child{
+.container.nested .container [class*="col-"]:last-child{
   border-right: none;
 }
