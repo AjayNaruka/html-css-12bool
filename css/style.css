@@ -21,29 +21,22 @@
   position: relative;
 }
 .container .text{
+  /*TESTO CENTRATO*/
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  
 }
 
 .container.nested > [class*="col-"]{
   padding: 5px;
 }
-.container.nested .container{
+.container.nested .container{ 
+  /*RESIZE CONTAINER*/
   height: 100%;
 }
 .container.nested .container [class*="col-"]{
   background-color: #F08080;
-  border-top: none;
-  border-bottom: none;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border: 1px solid white;
 }
-.container.nested .container [class*="col-"]:first-child{
-  border-left: none;
-}
-.container.nested .container [class*="col-"]:last-child{
-  border-right: none;
-}
+
